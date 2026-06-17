@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INGOT9000 Pro - Ultimate Performance Premium Product from ALIBARBAR PREMIUM">
+    <title>INGOT9000 Pro - ALIBARBAR PREMIUM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><span class="logo-premium">ALIBARBAR</span> <span class="logo-sub">PREMIUM</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PRODUCT DETAIL SECTION -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- PRODUCT IMAGES -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="images/products/ingot9000-main.jpg" alt="INGOT9000 Pro Main Image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="images/products/ingot9000-1.jpg" alt="INGOT9000 View 1" onclick="changeImage(this.src)" class="thumbnail">
+                        <img src="images/products/ingot9000-2.jpg" alt="INGOT9000 View 2" onclick="changeImage(this.src)" class="thumbnail">
+                        <img src="images/products/ingot9000-3.jpg" alt="INGOT9000 View 3" onclick="changeImage(this.src)" class="thumbnail">
+                        <img src="images/products/ingot9000-4.jpg" alt="INGOT9000 View 4" onclick="changeImage(this.src)" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- PRODUCT INFO -->
+                <div class="product-content">
+                    <div class="product-header">
+                        <div class="badge-section">
+                            <span class="badge">Flagship Model</span>
+                            <span class="badge badge-new">2024</span>
+                        </div>
+                        <h1>INGOT9000 Pro</h1>
+                        <p class="tagline">Ultimate Performance Architecture</p>
+                        <div class="product-rating-large">
+                            <span class="stars-large">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">328 Reviews | 4.9/5 Stars</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <p class="price-label">Premium Price:</p>
+                        <p class="price-large">$299.99</p>
+                        <p class="original-price"><s>$349.99</s> <span class="discount">Save $50</span></p>
+                    </div>
+
+                    <div class="description-section">
+                        <p class="product-description">
+                            INGOT9000 Pro represents the zenith of premium engineering. Architected with cutting-edge AI technology, 
+                            featuring advanced processing cores, premium titanium construction, and neural memory optimization. 
+                            Every specification engineered for those who demand absolute excellence.
+                        </p>
+                    </div>
+
+                    <!-- FEATURES -->
+                    <div class="features-section">
+                        <h3>Premium Features</h3>
+                        <ul class="features-list-large">
+                            <li>✓ Next-Generation AI Core</li>
+                            <li>✓ Premium Titanium Construction</li>
+                            <li>✓ 32GB Neural Memory</li>
+                            <li>✓ Advanced Thermal Management</li>
+                            <li>✓ Enterprise Security Suite</li>
+                            <li>✓ 24/7 Elite Support</li>
+                            <li>✓ Lifetime Premium Warranty</li>
+                        </ul>
+                    </div>
+
+                    <!-- SPECIFICATIONS -->
+                    <div class="specifications-section">
+                        <h3>Technical Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td><strong>Processor</strong></td>
+                                <td>AI-Enhanced Core i9 Platinum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Memory</strong></td>
+                                <td>32GB DDR5 Neural Memory</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Storage</strong></td>
+                                <td>2TB Premium SSD NVMe</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display</strong></td>
+                                <td>4K OLED 15.6" 120Hz</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Battery</strong></td>
+                                <td>20+ Hours Premium Grade</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weight</strong></td>
+                                <td>1.2 kg (Ultra-light Titanium)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Build</strong></td>
+                                <td>Premium Titanium Alloy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Security</strong></td>
+                                <td>Military-Grade Encryption</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- PURCHASE OPTIONS -->
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="quantity-control">
+                                <button onclick="decreaseQty()">−</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button onclick="increaseQty()">+</button>
+                            </div>
+                        </div>
+
+                        <div class="purchase-buttons">
+                            <button class="btn btn-primary btn-large" onclick="addToCartWithQty('INGOT9000', 299.99)">Add to Cart</button>
+                            <a href="checkout.html" class="btn btn-secondary btn-large">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <!-- SHIPPING INFO -->
+                    <div class="shipping-info">
+                        <p><strong>📦 Free Shipping</strong> on all orders worldwide</p>
+                        <p><strong>🔒 Secure Checkout</strong> with enterprise-grade encryption</p>
+                        <p><strong>↩️ Easy Returns</strong> 30-day satisfaction guarantee</p>
+                        <p><strong>🎁 Gift Wrapping</strong> available - Premium packaging</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="product-benefits">
+        <div class="container">
+            <h2>Why INGOT9000 Pro Stands Out</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🚀 Next-Generation Performance</h3>
+                    <p>Cutting-edge AI-assisted technology for unmatched speed and reliability</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💎 Premium Craftsmanship</h3>
+                    <p>Hand-crafted with premium materials and meticulous attention to detail</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🌍 Global Support</h3>
+                    <p>24/7 concierge support in multiple languages from our elite team</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>✅ Premium Guarantee</h3>
+                    <p>Lifetime warranty and 30-day money-back guarantee with no conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/ingot1500.jpg" alt="INGOT1500 Elite">
+                    </div>
+                    <div class="product-info">
+                        <h3>INGOT1500 Elite</h3>
+                        <p class="price">$199.99</p>
+                        <a href="ingot1500.html" class="btn btn-secondary btn-sm">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/ingot2500.jpg" alt="INGOT2500 Standard">
+                    </div>
+                    <div class="product-info">
+                        <h3>INGOT2500 Standard</h3>
+                        <p class="price">$249.99</p>
+                        <a href="ingot2500.html" class="btn btn-secondary btn-sm">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/premium-case.jpg" alt="Premium Case">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Protective Case</h3>
+                        <p class="price">$49.99</p>
+                        <a href="premium-case.html" class="btn btn-secondary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Product FAQs</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3 onclick="toggleFAQ(this)">What warranty does INGOT9000 Pro include? <span class="faq-toggle">+</span></h3>
+                    <p class="faq-answer">INGOT9000 Pro comes with Lifetime Premium Warranty covering all manufacturing defects, plus a 30-day money-back guarantee and complimentary technical support for life.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 onclick="toggleFAQ(this)">How long is the shipping time? <span class="faq-toggle">+</span></h3>
+                    <p class="faq-answer">We offer free standard shipping (5-7 business days), express delivery (2-3 days), and white-glove next-day delivery with installation assistance available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 onclick="toggleFAQ(this)">Is this product available internationally? <span class="faq-toggle">+</span></h3>
+                    <p class="faq-answer">Yes, we ship to 50+ countries worldwide with full customs support. Check our shipping page for your country's specific details and any applicable duties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ALIBARBAR PREMIUM. All rights reserved. | Engineered for Excellence</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

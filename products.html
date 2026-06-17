@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse ALIBARBAR PREMIUM's complete collection of INGOT products and premium accessories.">
+    <title>Products - ALIBARBAR PREMIUM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><span class="logo-premium">ALIBARBAR</span> <span class="logo-sub">PREMIUM</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-page">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Premium Collection</h1>
+            <p>Curated Excellence for Discerning Customers</p>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter" onchange="filterProducts()">
+                        <option value="all">All Products</option>
+                        <option value="ingot">INGOT Series</option>
+                        <option value="limited">Limited Edition</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select id="sortFilter" onchange="filterProducts()">
+                        <option value="newest">Newest First</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterProducts()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- INGOT9000 -->
+                <div class="product-card" data-category="ingot">
+                    <div class="product-image">
+                        <img src="images/products/ingot9000.jpg" alt="INGOT9000">
+                        <span class="badge">Flagship</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>INGOT9000 Pro</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(328 reviews)</span>
+                        </div>
+                        <p class="product-description">Ultimate performance architecture</p>
+                        <p class="price">$299.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('INGOT9000', 299.99)">Add to Cart</button>
+                            <a href="ingot9000.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INGOT1500 -->
+                <div class="product-card" data-category="ingot">
+                    <div class="product-image">
+                        <img src="images/products/ingot1500.jpg" alt="INGOT1500">
+                    </div>
+                    <div class="product-info">
+                        <h3>INGOT1500 Elite</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(256 reviews)</span>
+                        </div>
+                        <p class="product-description">Advanced premium performance</p>
+                        <p class="price">$199.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('INGOT1500', 199.99)">Add to Cart</button>
+                            <a href="ingot1500.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INGOT2500 -->
+                <div class="product-card" data-category="ingot">
+                    <div class="product-image">
+                        <img src="images/products/ingot2500.jpg" alt="INGOT2500">
+                    </div>
+                    <div class="product-info">
+                        <h3>INGOT2500 Standard</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(189 reviews)</span>
+                        </div>
+                        <p class="product-description">Premium features and reliability</p>
+                        <p class="price">$249.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('INGOT2500', 249.99)">Add to Cart</button>
+                            <a href="ingot2500.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIMITED EDITION PRO -->
+                <div class="product-card" data-category="limited">
+                    <div class="product-image">
+                        <img src="images/products/limited-pro.jpg" alt="Limited Edition Pro">
+                        <span class="badge badge-limited">Limited</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Limited Edition Pro</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(142 reviews)</span>
+                        </div>
+                        <p class="product-description">Exclusive limited release model</p>
+                        <p class="price">$399.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('Limited Edition Pro', 399.99)">Add to Cart</button>
+                            <a href="limited-pro.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREMIUM CASE -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="images/products/premium-case.jpg" alt="Premium Protective Case">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Protective Case</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(98 reviews)</span>
+                        </div>
+                        <p class="product-description">Premium protection and style</p>
+                        <p class="price">$49.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('Premium Case', 49.99)">Add to Cart</button>
+                            <a href="premium-case.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXTENDED WARRANTY -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="images/products/warranty.jpg" alt="Extended Warranty">
+                    </div>
+                    <div class="product-info">
+                        <h3>Extended Warranty (3 Years)</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(156 reviews)</span>
+                        </div>
+                        <p class="product-description">Full coverage protection plan</p>
+                        <p class="price">$79.99</p>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary btn-sm" onclick="addToCart('Extended Warranty', 79.99)">Add to Cart</button>
+                            <a href="warranty.html" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ALIBARBAR PREMIUM. All rights reserved. | Engineered for Excellence</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
