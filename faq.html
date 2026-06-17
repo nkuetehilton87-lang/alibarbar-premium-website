@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ALIBARBAR PREMIUM - Frequently Asked Questions about our products, shipping, and support.">
+    <title>FAQ - ALIBARBAR PREMIUM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><span class="logo-premium">ALIBARBAR</span> <span class="logo-sub">PREMIUM</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-page">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything You Need to Know About ALIBARBAR</p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-main">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="Search questions..." onkeyup="searchFAQ()">
+            </div>
+
+            <!-- PRODUCT QUESTIONS -->
+            <div class="faq-category">
+                <h2>Product Questions</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What makes INGOT9000 different from other premium products?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                INGOT9000 represents the pinnacle of engineering excellence. It features proprietary AI-assisted technology, 
+                                premium titanium construction, 32GB neural memory, and processing cores engineered exclusively for ALIBARBAR. 
+                                Every specification is crafted for uncompromising performance and reliability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is the warranty on ALIBARBAR products?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                All ALIBARBAR products come with a Lifetime Premium Warranty covering manufacturing defects, comprehensive support, 
+                                and optional extended coverage. Additionally, we offer a 30-day satisfaction guarantee with no-questions-asked returns.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Are ALIBARBAR products compatible with standard devices?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                ALIBARBAR products are engineered as standalone premium solutions. However, they feature universal connectivity protocols 
+                                and are compatible with most modern devices. Full compatibility information is available in our detailed product specifications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What customization options are available?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                ALIBARBAR offers premium customization services including personalized engraving, custom color options for select models, 
+                                and bespoke configurations. Contact our concierge team for detailed customization inquiries and pricing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHIPPING & DELIVERY -->
+            <div class="faq-category">
+                <h2>Shipping & Delivery</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are the shipping options available?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                We offer multiple premium shipping options:<br>
+                                • Standard Shipping (5-7 business days) - Free for orders over $200<br>
+                                • Express Delivery (2-3 business days) - Premium tracking included<br>
+                                • White-Glove Delivery (Next day) - Signature required, installation assistance available
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you ship internationally?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes, ALIBARBAR ships to 50+ countries worldwide. International shipping includes customs documentation, tracking, 
+                                and full insurance. Visit our Shipping Policy for complete details on your country and applicable duties.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How can I track my order?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Upon shipping, you'll receive a tracking number via email. You can track your package in real-time on our website, 
+                                via the carrier's platform, or by contacting our concierge support team. We provide proactive updates at each delivery milestone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What if my package is damaged?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                All ALIBARBAR shipments are fully insured. If your package arrives damaged, photograph the damage, document the packaging condition, 
+                                and contact our support team immediately. We'll process a replacement or full refund within 48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RETURNS & REFUNDS -->
+            <div class="faq-category">
+                <h2>Returns & Refunds</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is your return policy?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                We offer a 30-day satisfaction guarantee. If you're not completely satisfied, return your product in original condition 
+                                with all packaging and accessories. We'll process a full refund or exchange. No restocking fees. No questions asked.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How long does a refund take?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Once we receive your return, we'll process your refund within 48 hours. Depending on your financial institution, 
+                                the refund will appear in your account within 5-10 business days. Return shipping is free for all defective products.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I return a used product?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes. Our 30-day satisfaction guarantee applies to used products. Simply return the item in good working condition with all accessories. 
+                                We accept returns for any reason—if it's not perfect for you, we'll make it right.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAYMENT & SECURITY -->
+            <div class="faq-category">
+                <h2>Payment & Security</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What payment methods does ALIBARBAR accept?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                ALIBARBAR accepts multiple payment methods for your convenience:<br>
+                                • Credit/Debit Cards (Visa, Mastercard, American Express)<br>
+                                • PayPal<br>
+                                • CashApp<br>
+                                • Zelle<br>
+                                • Chime<br>
+                                • Bitcoin & Cryptocurrency<br>
+                                • Gift Cards<br>
+                                • Bank Transfer (International)<br>
+                                All transactions are encrypted with enterprise-grade SSL security.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is my payment information secure?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Absolutely. ALIBARBAR uses industry-leading 256-bit SSL encryption for all transactions. We're PCI-DSS compliant and 
+                                never store sensitive payment information on our servers. Your data is protected by the same security standards used by 
+                                leading financial institutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer payment plans?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes. ALIBARBAR offers flexible payment options including installment plans through PayPal Credit and other financing partners. 
+                                Contact our concierge team for available options and eligibility requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUPPORT & SERVICE -->
+            <div class="faq-category">
+                <h2>Support & Service</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How can I contact customer support?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Our concierge support team is available 24/7 via:<br>
+                                • Email: support@alibarbar.com<br>
+                                • Phone: +1 (800) ALIBARBAR<br>
+                                • Live Chat: Visit contact page<br>
+                                • Contact Form: Complete inquiry form on our website<br>
+                                Average response time: Under 2 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What warranty coverage is included?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                ALIBARBAR products include:<br>
+                                • Lifetime Warranty on manufacturing defects<br>
+                                • 30-Day Satisfaction Guarantee<br>
+                                • Free technical support for life<br>
+                                • Complimentary maintenance and updates<br>
+                                • Extended warranty options available for purchase
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer training or tutorials?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes. ALIBARBAR offers comprehensive support including video tutorials, detailed documentation, one-on-one setup assistance, 
+                                and webinar training sessions. Premium customers receive personalized concierge setup service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SUPPORT CTA -->
+    <section class="support-cta">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Our expert team is ready to help</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Contact Support</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ALIBARBAR PREMIUM. All rights reserved. | Engineered for Excellence</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
